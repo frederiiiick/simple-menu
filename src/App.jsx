@@ -5,7 +5,7 @@ import Logo from './assets/images/logo.png'
 import Separator from './components/Separator';
 import AddProduct from './modules/AddProduct';
 import CategoryPill from './components/CategoryPill';
-import DeleteProduct from './modules/DeleteProduct';
+import RemoveProduct from './modules/RemoveProduct';
 import EditProduct from './modules/EditProduct';
 import PreviewProduct from './modules/PreviewProduct';
 import { toast } from 'react-toastify';
@@ -55,7 +55,7 @@ const App = () => {
                     <td data-title="Actions:" className='actions'>
                       <PreviewProduct selectedData={products[key]} selectedKey={key} />
                       <EditProduct fetchProductsData={fetchProductsData} selectedData={products[key]} selectedKey={key} />
-                      <DeleteProduct fetchProductsData={fetchProductsData} selectedData={products[key]} selectedKey={key} />
+                      <RemoveProduct fetchProductsData={fetchProductsData} selectedData={products[key]} selectedKey={key} />
                     </td>
                   </tr>
                 )

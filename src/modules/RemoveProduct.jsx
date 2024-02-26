@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 import { Icons } from "../components/Icons";
 import ActionIcon from "../components/ActionIcon";
 
-const DeleteProduct = ({ fetchProductsData, selectedData, selectedKey }) => {
+const RemoveProduct = ({ fetchProductsData, selectedData, selectedKey }) => {
   const [deleteModal, setDeleteModal] = useState(false);
 
   const onRemoveProduct = () => {
@@ -34,4 +34,4 @@ const DeleteProduct = ({ fetchProductsData, selectedData, selectedKey }) => {
 }
 
 
-export default DeleteProduct;
+export default RemoveProduct;
