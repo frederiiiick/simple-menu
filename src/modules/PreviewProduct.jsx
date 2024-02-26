@@ -7,11 +7,11 @@ import { currencyFormatter } from "../utils/Helpers";
 
 const PreviewProduct = ({ selectedData, selectedKey }) => {
   const [previewModal, setPreviewModal] = useState(false);
-  
+
   return (
     <>
       <ModalContainer modal={previewModal} setModal={setPreviewModal} title={'Product Detail'}>
-        <div style={{ textAlign: 'left' }}>
+        <div style={{ textAlign: 'left', minWidth: '300' }}>
           <CategoryPill category={selectedData?.categories} />
           <p><b>Product Name:</b> {selectedData?.name}</p>
           <div style={{ display: 'flex', columnGap: 10 }}>
